@@ -3,36 +3,91 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Список кинофильмов</title>
+		<title>Кинофильм "Калашников (2020)"</title>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
-
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
 		</script>
-
 		<script>
-
 			function Message()
 			{
-				alert('Билет на фильм "Калашников (2020)" успешно заказан!')
+				alert('Билет на кинофильм "Калашников (2020)" успешно заказан!')
 			}
-
 		</script>
 
-		<hr color = red>
-		<h1>ИНФОРМАЦИЯ О ФИЛЬМЕ</h1>
-		<hr color = red>
+		<hr size="5" class="bg-danger">
+		<a href = https://vk.com/ivebeendoingwell target = _blank title = "Страница разработчика">
+			<img src = logo.png wight = 100px height = 100px class = logo>
+		</a>
+		<h1>ИНФОРМАЦИЯ О КИНОФИЛЬМЕ</h1>
+		<hr size="5" class="bg-danger">
 	</head>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+    	</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto w-100 justify-content-center">
+				<li class="nav-item">
+	        		<a class="nav-link" href="main.html">Главная</a>
+	      		</li>
+	      		<li class="nav-item active">
+	        		<a class="nav-link" href="Film_List.html">Список кинофильмов</a>
+	      		</li>
+	      		<li class="nav-item">
+		        	<a class="nav-link" href="about_us.html">О нас</a>
+	      		</li>
+	    	</ul>
+		</div>
+	</nav>
+
+	<hr size="5" class="bg-danger">
 	
-	<header>
-		<a href = https://vk.com/ivebeendoingwell target = _blank title = "Страница разработчика"><img src = logo.png wight = 100px height = 100px class = logo></a>
-		<a href = main.html title = "Главная страница сайта">Главная</a><a href = Film_List.html title = "Список актуальных фильмов" class = hTab>Список фильмов</a><a href = about_us.html title = "Вся доступная информация о нашей компании" class = hTab>О Нас</a>
-	</header>
+	<center>
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+			<div class="carousel-indicators ">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="bg-danger" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-danger" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active bg-danger" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<a href = "The Gentlemen.html">
+							<img src="The Gentlemen.png" class="d-block" alt="The Gentlemen">
+						</a>
+					</div>
+					<div class="carousel-item">
+						<a href = "Kalashnikov.html">
+							<img src="Kalashnikov.png" class="d-block" alt="Kalashnikov">
+						</a>
+					</div>
+					<div class="carousel-item active">
+						<a href = "Mortal Kombat.html">
+							<img src="Mortal Kombat.png" class="d-block" alt="MK">
+						</a>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+					<span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+					<span class="visually-hidden">Предыдущий</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+					<span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+					<span class="visually-hidden">Следующий</span>
+				</button>
+			</div>
+		</div>
+	</center>
+
+	<hr size="5" class="bg-danger">
+
 	<center>
 		<a href = Kalashnikov.png target = _blank><img src = Kalashnikov.png class = filmInfo /></a>
 	</center>
+
 	<h3>Краткое описание</h3>
 	<p class = shortDiscrFL>Юрий Борисов в байопике про изобретателя легендарного автомата AК-47.</p><br>
 
@@ -41,7 +96,7 @@
 
     <h3>О фильме</h3>
     <center>
-		<table bordercolor = red border = 3 width = 800 height = 1000px cellpadding = 10px>
+		<table class="table table-striped border-danger w-50 table-light">
 			<div class = "fontTable">
 				<tr style = "font-weight: 700">
 					<td></td>
@@ -104,10 +159,12 @@
 			</div>
 		</table>
 	</center>
-	
+
+	<br>
+
 	<button type="button" class="btn btn-outline-danger d-block mx-auto" style = " font-size : 20px; width: 250px; height: 45px;" onclick="Message()">Заказать билет</button>
 
 	<footer>
-		<hr color = black>&copy Валентин Прокофьев 2021<br>Все права защищены.
+		<hr size="5" class="bg-dark">&copy Валентин Прокофьев 2021<br>Все права защищены.
 	</footer>
 </html>
