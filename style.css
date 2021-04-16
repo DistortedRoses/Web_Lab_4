@@ -15,22 +15,21 @@ header
 	margin-bottom: 20px;
 }
 
-.logo
+img.logo
 { /*Установка места для лого сайта*/
 	margin-top: -10px;
 	height: 57px;
 	width: 57px;
 	float: left;
 	margin-right: -60px;
-	padding-bottom: -60px;
 }
 
-.logo:hover
+img.logo:hover
 { /*Наведение на логотип*/
 	display: block;
-	border: 3px solid red;
-	height: 52px;
-	width: 52px;
+	border: 5px solid red;
+	height: 45px;
+	width: 45px;
 }
 
 header a
@@ -57,6 +56,11 @@ center a
 	color: black;
 	text-decoration: none;
 	font-size: 20px;
+}
+
+body
+{ /*Задний фон*/
+	background-color: #E9967A;
 }
 
 h3
@@ -133,7 +137,7 @@ img.filmInfo
 img.filmInfo:hover
 { 
 	border: none;
-	height: 599.5px;
+	height: 610px;
 	width: auto;
 }
 
@@ -160,28 +164,7 @@ img.filmCatalog:hover
 { /*Наведение на фильм из каталога*/
 	border: 5px solid red;
 	width: auto;
-	height: 450px;
-	color: #696969;
-}
-
-.filmLink:hover img.filmCatalog
-{
-	border: 5px solid red;
-	width: auto;
-	height: 450px;
-	color: #696969;
-}
-
-.filmLink
-{
-	text-decoration: none;
-	color: black;
-}
-
-.filmLink:hover
-{
-	text-decoration: none;
-	color: red;
+	height: 440px;
 }
 
 .description
@@ -229,7 +212,7 @@ input[type = topic]
 input[type = button]
 { /*Поле "Имя"*/
 	margin-left: 40px;
-	color: black;
+	color: red;
 }
 
 textarea
@@ -244,36 +227,13 @@ textarea
 	text-transform: capitalize;
 }
 
-img.genDir
+.genDir
 {
 	margin: 0 auto;
 	height: 400px;
 	width: auto;
+	border: 5px solid red;
 
     font-family: cursive;
     margin-bottom: -20px;
-}
-
-img.genDir:hover
-{
-	border: 5px solid red;
-}
-
-
-.filmLink:hover img.genDir
-{
-	border: 5px solid red;
-	width: auto;
-	height: 400px;
-	color: #696969;
-}
-
-nav.navbar .dropdown:hover > .dropdown-menu
-{
- display: block; 
-} 
-
-nav.navbar
-{
-	font-size: 24px;
 }
